@@ -22,6 +22,7 @@ pipeline {
     stage('Build') {
        steps {
          sh 'npm install'
+         sh 'cc -o cprog cprog.c'
        }
 
     }
@@ -30,6 +31,7 @@ pipeline {
 
       steps {
         sh 'npm test'
+        sh './cprog'
       }
 
     }

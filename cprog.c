@@ -4,7 +4,7 @@
 
 int main () {
 
-   printf("Hello! I am C-Program. Thank you!");
+   printf("Hello! I am C-Program. Thank you!\n");
 
    return 0;
 
