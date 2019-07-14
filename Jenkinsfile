@@ -64,7 +64,7 @@ pipeline {
     stage('Clean up local docker image') {
        steps {
         sh "docker rmi $registry:$BUILD_NUMBER"
-        sh "docker rmi $registry:latest"
+        sh "docker rmi -f $registry:latest"
         }
     }
 
